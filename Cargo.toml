@@ -1,0 +1,8 @@
+[package]
+name = "breakout"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# The "dynamic" feature compiles faster, but needs to be removed for standalone builds
+bevy = { version = "0.7.0", features = ["dynamic"] }
