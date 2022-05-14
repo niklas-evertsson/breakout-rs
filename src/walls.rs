@@ -1,18 +1,16 @@
 use bevy::{
     math::Vec2,
-    prelude::{default, Bundle, Color, Transform},
+    prelude::{default, Bundle, Transform},
     sprite::{Sprite, SpriteBundle},
 };
 
-use crate::components::Collider;
+use crate::{color::WALL_COLOR, components::Collider};
 
 pub const WALL_THICKNESS: f32 = 10.0;
 pub const LEFT_WALL: f32 = -450.;
 pub const RIGHT_WALL: f32 = 450.;
 pub const BOTTOM_WALL: f32 = -300.;
 pub const TOP_WALL: f32 = 300.;
-
-const WALL_COLOR: Color = Color::rgb(0.8, 0.8, 0.8);
 
 pub enum WallLocation {
     Left,

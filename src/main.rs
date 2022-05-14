@@ -8,6 +8,8 @@ mod brick;
 use brick::*;
 mod collision_system;
 use collision_system::*;
+mod color;
+use color::*;
 mod components;
 use components::*;
 mod events;
@@ -21,7 +23,6 @@ use velocity_system::*;
 mod walls;
 use walls::*;
 
-const BACKGROUND_COLOR: Color = Color::rgb(0.9, 0.9, 0.9);
 const TIME_STEP: f32 = 1.0 / 60.0;
 
 fn main() {
@@ -94,7 +95,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
                     style: TextStyle {
                         font: asset_server.load(SCORE_TEXT_FONT),
                         font_size: SCORE_FONT_SIZE,
-                        color: TEXT_COLOR,
+                        color: SCORE_TEXT_COLOR,
                     },
                 },
                 TextSection {
@@ -102,7 +103,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
                     style: TextStyle {
                         font: asset_server.load(SCORE_NUMBER_FONT),
                         font_size: SCORE_FONT_SIZE,
-                        color: SCORE_COLOR,
+                        color: SCORE_NUMBER_COLOR,
                     },
                 },
             ],

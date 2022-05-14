@@ -1,5 +1,5 @@
 use bevy::{
-    prelude::{Color, Query, Res},
+    prelude::{Query, Res},
     text::Text,
     ui::Val,
 };
@@ -9,8 +9,6 @@ pub const SCORE_TEXT_FONT: &str = "fonts/FiraSans-Bold.ttf";
 pub const SCORE_NUMBER_FONT: &str = "fonts/FiraMono-Medium.ttf";
 pub const SCORE_FONT_SIZE: f32 = 40.0;
 pub const SCORE_TEXT_PADDING: Val = Val::Px(5.0);
-pub const SCORE_COLOR: Color = Color::rgb(1.0, 0.5, 0.5);
-pub const TEXT_COLOR: Color = Color::rgb(0.5, 0.5, 1.0);
 
 pub struct Score {
     score: usize,

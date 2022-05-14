@@ -1,12 +1,11 @@
 use bevy::{
     input::Input,
     math::{const_vec3, Vec3},
-    prelude::{Color, KeyCode, Query, Res, Transform, With},
+    prelude::{KeyCode, Query, Res, Transform, With},
 };
 
 use crate::{components::Paddle, walls::*, TIME_STEP};
 
-pub const PADDLE_COLOR: Color = Color::rgb(0.3, 0.3, 0.7);
 pub const PADDLE_HEIGHT: f32 = 60.0;
 pub const PADDLE_SIZE: Vec3 = const_vec3!([120.0, 20.0, 0.0]);
 
