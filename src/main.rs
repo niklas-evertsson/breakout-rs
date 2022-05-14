@@ -95,7 +95,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
                     style: TextStyle {
                         font: asset_server.load(SCORE_TEXT_FONT),
                         font_size: SCORE_FONT_SIZE,
-                        color: SCORE_TEXT_COLOR,
+                        color: SCORE_COLOR,
                     },
                 },
                 TextSection {
@@ -103,7 +103,7 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
                     style: TextStyle {
                         font: asset_server.load(SCORE_NUMBER_FONT),
                         font_size: SCORE_FONT_SIZE,
-                        color: SCORE_NUMBER_COLOR,
+                        color: SCORE_COLOR,
                     },
                 },
             ],
